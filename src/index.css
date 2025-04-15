@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+h1 {
+  @apply text-4xl font-bold text-blue-600 mb-4;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-gray-700 mt-6 mb-4;
+}
+
+p {
+  @apply text-lg text-gray-600 mb-6;
+}
+
+.featured-products {
+  @apply flex flex-wrap gap-6 justify-center mt-4;
+}
+
+.product-card {
+  @apply bg-white border border-gray-300 rounded-lg p-4 w-40 text-center shadow-md hover:shadow-lg transition-shadow;
+}
+
+.product-card h3 {
+  @apply text-lg font-medium text-gray-800 mb-2;
+}
+
+.product-card p {
+  @apply text-sm text-gray-500;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f3f4f6; /* Light gray background */
+  overflow: hidden;
+}
+
+.rolling-bracelet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px; /* Adjust width to fit the bracelet */
+  height: 200px; /* Adjust height to fit the bracelet */
+}
+
+.bead {
+  width: 20px;
+  height: 30px;
+  background: radial-gradient(circle, #000000, #333333); /* Black marble effect */
+  border-radius: 50%;
+  position: absolute;
+  animation: roll-to-center 2s ease-in-out, form-bracelet 1s ease-in-out 2s forwards;
+}
+
+.bead:nth-child(1) { animation-delay: 0s; }
+.bead:nth-child(2) { animation-delay: 0.2s; }
+.bead:nth-child(3) { animation-delay: 0.4s; }
+.bead:nth-child(4) { animation-delay: 0.6s; }
+.bead:nth-child(5) { animation-delay: 0.8s; }
+.bead:nth-child(6) { animation-delay: 1s; }
+.bead:nth-child(7) { animation-delay: 1.2s; }
+.bead:nth-child(8) { animation-delay: 1.4s; }
+
+
+@keyframes roll-to-center {
+  0% {
+    transform: translateX(-100vw) rotate(0deg);
+  }
+  50% {
+    transform: translateX(50vw) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes form-bracelet {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(var(--index) * -45deg)) translate(80px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+
