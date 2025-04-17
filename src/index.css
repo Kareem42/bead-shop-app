@@ -58,7 +58,7 @@ p {
 .bead {
   width: 20px;
   height: 30px;
-  background: radial-gradient(circle, #000000, #333333); /* Black marble effect */
+  background: radial-gradient(circle, #e0dada, #333333); /* Black marble effect */
   border-radius: 50%;
   position: absolute;
   animation: roll-to-center 2s ease-in-out, form-bracelet 1s ease-in-out 2s forwards;
@@ -72,7 +72,6 @@ p {
 .bead:nth-child(6) { animation-delay: 1s; }
 .bead:nth-child(7) { animation-delay: 1.2s; }
 .bead:nth-child(8) { animation-delay: 1.4s; }
-
 
 @keyframes roll-to-center {
   0% {
@@ -106,6 +105,13 @@ p {
 
 .fade-in {
   animation: fade-in 1s ease-in-out;
+}
+
+.home-background {
+  background-image: url('/path-to-your-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 

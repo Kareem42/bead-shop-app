@@ -64,8 +64,8 @@ export const StickyNavbar = () => {
 
   return (
     <div className="max-w-screen-lg mx-auto">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between text-blue-gray-900">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-indigo-500">
+        <div className="flex items-center justify-between text-white">
           <Typography
             as="a"
             href="#"
@@ -79,7 +79,7 @@ export const StickyNavbar = () => {
               <Button
                 variant="text"
                 size="sm"
-                className="hidden lg:inline-block"
+                className="hidden lg:inline-block text-white"
               >
                 <span>Log In</span>
               </Button>
@@ -93,7 +93,7 @@ export const StickyNavbar = () => {
             </div>
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6 text-white hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
@@ -133,7 +133,7 @@ export const StickyNavbar = () => {
         <MobileNav open={openNav}>
           {navList}
           <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
+            <Button fullWidth variant="text" size="sm" className="text-white">
               <span>Log In</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
