@@ -3,6 +3,7 @@ import "./index.css";
 import Home from "./components/section/Home";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
+import FeaturedProducts from "./components/section/FeaturedProducts";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,6 +27,8 @@ function App() {
           <div className="fade-in">
             <Home />
           </div>
+          <FeaturedProducts />
+
         </>
       )}
     </>
