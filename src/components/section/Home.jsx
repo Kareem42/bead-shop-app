@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "./africa.jpeg"; // Adjust the path as necessary
 
-export default function Home () {
+export default function Home() {
   const [greeting, setGreeting] = useState("");
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Home () {
       </h1>
       <p className="text-base sm:text-lg lg:text-xl mb-4 text-white max-w-2xl">
         <strong className="text-white">
-          Unleash your creativity! Explore our collection of beads, charms, and tools to design your own custom bracelets. 
+          Unleash your creativity! Explore our collection of beads, charms, and tools to design your own custom bracelets.
           You can also select from our premade designs. Whether you're crafting for yourself or creating a gift, we have everything you need to bring your vision to life.
         </strong>
       </p>

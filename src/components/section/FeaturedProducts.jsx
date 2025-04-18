@@ -16,8 +16,8 @@ export default function FeaturedProducts() {
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">African Bead Selection</h2>
                     <p className="mt-4 text-gray-500">
-                        Our African beads are carefully selected to create unique and meaningful bracelets. Each bead is a work of art, 
-                        handcrafted by skilled artisans and infused with cultural heritage. From vibrant colors to intricate patterns, 
+                        Our African beads are carefully selected to create unique and meaningful bracelets. Each bead is a work of art,
+                        handcrafted by skilled artisans and infused with cultural heritage. From vibrant colors to intricate patterns,
                         these beads are a celebration of African traditions and craftsmanship.
                     </p>
 

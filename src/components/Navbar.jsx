@@ -6,7 +6,6 @@ import {
   Popover,
   PopoverButton,
   PopoverGroup,
-  PopoverPanel,
   Tab,
   TabGroup,
   TabList,
