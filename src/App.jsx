@@ -4,6 +4,9 @@ import Home from "./components/section/Home";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import FeaturedProducts from "./components/section/FeaturedProducts";
+import Stats from "./components/section/Stats";
+import Designers from "./components/section/Designers";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +31,8 @@ function App() {
             <Home />
           </div>
           <FeaturedProducts />
+          <Stats />
+          <Designers />
 
         </>
       )}

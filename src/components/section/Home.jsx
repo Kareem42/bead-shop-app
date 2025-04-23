@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "./africa.jpeg"; // Adjust the path as necessary
+import RevealOnScroll from "../RevealOnScroll";
 
 export default function Home() {
   const [greeting, setGreeting] = useState("");
@@ -16,6 +17,9 @@ export default function Home() {
   }, []);
 
   return (
+    <RevealOnScroll
+      className="fade-in"
+      threshold={0.1} >
     <div
       style={{
         display: "flex",
@@ -32,7 +36,7 @@ export default function Home() {
       }}
     >
       <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
-        {greeting}, Welcome to the Bead Shop!
+        {greeting}, Welcome to Rok!
       </h1>
       <p className="text-base sm:text-lg lg:text-xl mb-4 text-white max-w-2xl">
         <strong className="text-white">
@@ -49,5 +53,6 @@ export default function Home() {
         </button>
       </div>
     </div>
+    </RevealOnScroll>
   );
 };

@@ -214,7 +214,7 @@ export default function Navbar() {
         </div>
       </Dialog>
 
-      <header className="relative bg-white">
+      <header className="sticky top-0 z-50 bg-white">
         <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           <strong className="text-gray-300">Free shipping on orders over $50!</strong>
         </p>
