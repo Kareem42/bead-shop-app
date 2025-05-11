@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import FeaturedProducts from "./components/section/FeaturedProducts";
 import Stats from "./components/section/Stats";
 import Designers from "./components/section/Designers";
+import Contact from "./components/section/Contact";
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
           <FeaturedProducts />
           <Stats />
           <Designers />
+          <Contact />
 
         </>
       )}
